@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reloj</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+
     <script src="js/clock.js"></script>
+    <script src="js/changeColor.js"></script>
+    <script src="js/storage.js"></script>
 </head>
-<body>
-    <div id="clock">
-        <span id="hour"></span>
-        <span class="dot">:</span>
-        <span id="minutes"></span>
-        <span class="dot">:</span>
-        <span id="second"></span>
-    </div>
+
+<body class="body">
+    <main id="main">
+        <h1 id="title">Reloj en HTML, CSS y JavaScript</h1>
+        <div id="clock">
+            <span id="hour" class="digit"></span>
+            <span class="dot digit">:</span>
+            <span id="minutes" class="digit"></span>
+            <span class="dot digit">:</span>
+            <span id="second" class="digit"></span>
+        </div>
+    </main>
+    <section id="darkMode">
+        <label class="switch">
+            <input class="toggle" type="checkbox" >
+            <span class="slider round"></span>
+        </label>
+    </section>
 </body>
+
 </html>
